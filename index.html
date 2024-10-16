@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshit Garg - Resume</title>
+    <style>
+        /* Makes the iframe responsive to the screen size */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .pdf-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <h1>Harshit Garg - Resume</h1>
     <p>Click <a href="Harshit_Garg_Resume.pdf" target="_blank">here</a> to view my resume as a PDF.</p>
-    <iframe src="Harshit_Garg_Resume.pdf"></iframe>
+    <div class="pdf-container">
+        <iframe src="Harshit_Garg_Resume.pdf"></iframe>
+    </div>
 </body>
 </html>
