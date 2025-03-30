@@ -1,172 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshit Garg - Resume</title>
+    <title>Harshit Garg - Cybersecurity</title>
     <style>
-        body, html {
+        /* Styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        /* PDF Viewer Container */
-        .pdf-container {
-            position: relative;
-            width: 100%;
-            height: 50vh; /* Viewport height for the PDF */
-            overflow: hidden;
             background-color: #f4f4f4;
-        }
-
-        .pdf-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* Resume Content Section */
-        .content {
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        .content h1 {
-            color: #4CAF50;
-            text-align: center;
-        }
-
-        .content section {
-            margin-bottom: 20px;
-        }
-
-        .content h2 {
             color: #333;
         }
-
-        .content ul {
-            list-style-type: none;
-        }
-
-        .content ul li {
-            margin-bottom: 10px;
-        }
-
-        /* Contact Links */
-        .contact-links a {
-            color: #4CAF50;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .contact-links a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
+        header {
             background-color: #333;
             color: white;
+            padding: 20px;
             text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #0072b1;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        table {
             width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .badge-container {
+            margin: 20px 0;
+        }
+        .badge-container img {
+            margin: 5px;
         }
     </style>
 </head>
--->
 <body>
-    <!-- PDF Viewer -->
-    <div class="pdf-container">
-        <iframe src="Harshit_Garg_Resume.pdf"></iframe>
-    </div>
 
-    <!-- Resume Content Section -->
+    <header>
+        <h1>Hello, I'm Harshit Garg 👋</h1>
+        <div>
+            <a href="https://linkedin.com/in/harshitgarg-cs/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+            <a href="https://harshitgarg-cs.github.io/Harshit-Garg_Resume.pdf"><img src="https://img.shields.io/badge/-Resume-04c385?&style=for-the-badge" /></a>
+        </div>
+    </header>
+
     <div class="content">
-        <h1>Harshit Garg - Resume</h1>
+        <h2>Introduction</h2>
+        <p>I am a Computer Science undergraduate at Georgia State University, passionate about cybersecurity and ethical hacking. With hands-on experience in various cybersecurity tools and techniques, I enjoy solving complex security challenges and staying ahead of emerging threats.</p>
 
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:iharshit.garg.cs@gmail.com">iharshit.garg.cs@gmail.com</a></p>
-            <p>Mobile: +1 (404)-259-0501</p>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-                <a href="https://github.com" target="_blank">GitHub</a>
-            </div>
-        </section>
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <td>Incident Response & Investigation</td>
+                <td>Threat Detection & Mitigation</td>
+                <td>Password Hashing</td>
+                <td>Penetration Testing</td>
+            </tr>
+            <tr>
+                <td>Malware Analysis</td>
+                <td>OSINT-based Threat Analysis</td>
+                <td>Vulnerability Assessment</td>
+                <td>Identity and Access Management (IAM)</td>
+            </tr>
+            <tr>
+                <td>Kali Linux</td>
+                <td>VMWare Workstation</td>
+                <td>Python</td>
+                <td>Network Security</td>
+            </tr>
+            <tr>
+                <td>Ethical Hacking</td>
+                <td>Forensics</td>
+                <td>Cryptography</td>
+            </tr>
+        </table>
 
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>Georgia State University</strong> - Bachelor of Science in Computer Science (GPA: 3.70, Microsoft Scholar 2024)</p>
-            <p>Location: Atlanta, GA</p>
-        </section>
+        <h2>Tools</h2>
+        <table>
+            <tr>
+                <td>OSINT</td>
+                <td>John-the-Ripper</td>
+                <td>SIEM</td>
+                <td>Wireshark</td>
+                <td>VirusTotal</td>
+                <td>Azure Active Directory</td>
+                <td>IDS</td>
+                <td>Logging</td>
+            </tr>
+            <tr>
+                <td>Metasploit</td>
+                <td>nmap</td>
+                <td>NIST</td>
+                <td>MSF Venom</td>
+                <td>CyberChef</td>
+                <td>Shodan</td>
+            </tr>
+        </table>
 
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>ISC2: Certified in Cybersecurity</li>
-                <li>Microsoft Cybersecurity Analyst Professional Certificate</li>
-            </ul>
-        </section>
+        <h2>Certifications</h2>
+        <div class="badge-container">
+            <img src="https://img.shields.io/badge/-CodePath%20CYB%20101-04c385?&style=for-the-badge" />
+            <img src="https://img.shields.io/badge/-CodePath%20CYB%20102-04c385?&style=for-the-badge" />
+            <img src="https://img.shields.io/badge/-Datacom%20Cybersecurity%20Job%20Simulation-00276b?&style=for-the-badge" />
+            <img src="https://img.shields.io/badge/-Mastercard%20Cybersecurity%20Job%20Simulation-ff6000?&style=for-the-badge" />
+            <img src="https://img.shields.io/badge/-Tata%20Group%20Cybersecurity%20Analyst%20Job%20Simulation-ffffff?&style=for-the-badge" />
+            <img src="https://img.shields.io/badge/-ISC2%3A%20Certified%20in%20Cybersecurity-42823d?&style=for-the-badge" />
+            <img src="https://img.shields.io/badge/-Microsoft%3A%20Cybersecurity%20Analyst%20Professional%20Certificate-ffb902?&style=for-the-badge" />
+        </div>
 
-        <section id="technical-skills">
-            <h2>Technical Skills</h2>
-            <p><strong>Programming:</strong> Python</p>
-            <p><strong>Security & Networking:</strong> OSINT, Threat Detection, Incident Response, IAM, Malware Analysis</p>
-            <p><strong>Tools:</strong> Kali Linux, VMWare Workstation, Wireshark, nmap, Cyberchef, Shodan, Metasploit, Docker, Entra ID, SIEM, VirusTotal</p>
-        </section>
-
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <h3>Mission Omega (Sep 2024 - Present)</h3>
-            <p><strong>IT & Security Intern</strong> - Remote</p>
-            <ul>
-                <li>Improved security policy organization by analyzing 1800+ policies, reducing redundancy by 30% and ensuring compliance with security standards.</li>
-                <li>Automated software license tracking in HaloITSM, improving accuracy by 20% and reducing manual effort in cost analysis.</li>
-                <li>Configured Microsoft Purview, focusing on data classification, risk assessments, and role-based access control (RBAC) to enhance data governance and security measures.</li>
-            </ul>
-
-            <h3>Georgia State University (Jan 2025 - Present)</h3>
-            <p><strong>Learning Environment Support Technician - IIT</strong> - On-Site</p>
-            <ul>
-                <li>Ensured IT/AV security by managing access control and system integrity across collaborative spaces.</li>
-                <li>Resolved 20+ technical support tickets using ServiceNow, improving IT service response time by 25%.</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <h3>Real-Time Intrusion Detection System (Feb 2025)</h3>
-            <ul>
-                <li>Developed a real-time IDS using Python, Scapy, and Sklearn, improving network security monitoring.</li>
-                <li>Implemented a hybrid detection mechanism with anomaly detection and signature-based rules.</li>
-                <li>Tested performance using mock attack simulations (e.g., SYN floods and port scans).</li>
-            </ul>
-
-            <h3>Azure Active Directory (Feb 2025)</h3>
-            <ul>
-                <li>Configured SSO and implemented Conditional Access policies & RBACs using Azure AD to secure app access.</li>
-                <li>Enforced MFA and location-based restrictions for improved security and user experience.</li>
-            </ul>
-
-            <h3>GSU Technology Immersion Challenge (Nov 2024)</h3>
-            <ul>
-                <li>Led Cipher Soldiers to a top 10 finish in the CTF challenge, solving 8 of 10 challenges.</li>
-                <li>Improved cybersecurity skills in reverse engineering, forensics, and cryptography.</li>
-            </ul>
-
-            <h3>Incident Response Simulation (Apr 2024)</h3>
-            <ul>
-                <li>Conducted simulated incident response using SIEM, Splunk, and VirusTotal, improving threat response by 15%.</li>
-            </ul>
-        </section>
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/harshitgarg-cs/hybrid-intrusion-detection-system.git">Hybrid Intrusion Detection System Using Python</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/Azure-Active-Directory">Azure Active Directory</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/ctf-challenges">CTF Challenges</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/Incident-Response-by-IBM/tree/main">Incident Response Simulation</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/Password-Crackathon/tree/main">Password Cracking Using John-the-Ripper</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/Penetration-Testing/tree/main">Penetration Testing</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/DIY-Malware">DIY Malware</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/DATACOM_APT34/tree/main">DATACOM_APT34</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/TCS_TechCorp">IAM Solution Design for TechCorp</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/Password-Strength-Checker">Password Strength Checker</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/Student-Management-System">Student Management System</a></li>
+            <li><a href="https://github.com/harshitgarg-cs/Contact-Management-System">Contact Management System</a></li>
+        </ul>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Harshit Garg. All rights reserved.</p>
-    </footer>
 </body>
 </html>
