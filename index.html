@@ -5,29 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshit Garg - Resume</title>
     <style>
-        /* Makes the iframe responsive to the screen size */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
+            font-family: Arial, sans-serif;
         }
+
+        /* PDF Viewer Container */
         .pdf-container {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: 50vh; /* Viewport height for the PDF */
             overflow: hidden;
+            background-color: #f4f4f4;
         }
+
         .pdf-container iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
+
+        /* Resume Content Section */
+        .content {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .content h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        .content section {
+            margin-bottom: 20px;
+        }
+
+        .content h2 {
+            color: #333;
+        }
+
+        .content ul {
+            list-style-type: none;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Links */
+        .contact-links a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    
+    <!-- PDF Viewer -->
     <div class="pdf-container">
         <iframe src="Harshit_Garg_Resume.pdf"></iframe>
     </div>
+
+    <!-- Resume Content Section -->
+    <div class="content">
+        <h1>Harshit Garg - Resume</h1>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:iharshit.garg.cs@gmail.com">iharshit.garg.cs@gmail.com</a></p>
+            <p>Mobile: +1 (404)-259-0501</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Georgia State University</strong> - Bachelor of Science in Computer Science (GPA: 3.70, Microsoft Scholar 2024)</p>
+            <p>Location: Atlanta, GA</p>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>ISC2: Certified in Cybersecurity</li>
+                <li>Microsoft Cybersecurity Analyst Professional Certificate</li>
+            </ul>
+        </section>
+
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            <p><strong>Programming:</strong> Python</p>
+            <p><strong>Security & Networking:</strong> OSINT, Threat Detection, Incident Response, IAM, Malware Analysis</p>
+            <p><strong>Tools:</strong> Kali Linux, VMWare Workstation, Wireshark, nmap, Cyberchef, Shodan, Metasploit, Docker, Entra ID, SIEM, VirusTotal</p>
+        </section>
+
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <h3>Mission Omega (Sep 2024 - Present)</h3>
+            <p><strong>IT & Security Intern</strong> - Remote</p>
+            <ul>
+                <li>Improved security policy organization by analyzing 1800+ policies, reducing redundancy by 30% and ensuring compliance with security standards.</li>
+                <li>Automated software license tracking in HaloITSM, improving accuracy by 20% and reducing manual effort in cost analysis.</li>
+                <li>Configured Microsoft Purview, focusing on data classification, risk assessments, and role-based access control (RBAC) to enhance data governance and security measures.</li>
+            </ul>
+
+            <h3>Georgia State University (Jan 2025 - Present)</h3>
+            <p><strong>Learning Environment Support Technician - IIT</strong> - On-Site</p>
+            <ul>
+                <li>Ensured IT/AV security by managing access control and system integrity across collaborative spaces.</li>
+                <li>Resolved 20+ technical support tickets using ServiceNow, improving IT service response time by 25%.</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>Real-Time Intrusion Detection System (Feb 2025)</h3>
+            <ul>
+                <li>Developed a real-time IDS using Python, Scapy, and Sklearn, improving network security monitoring.</li>
+                <li>Implemented a hybrid detection mechanism with anomaly detection and signature-based rules.</li>
+                <li>Tested performance using mock attack simulations (e.g., SYN floods and port scans).</li>
+            </ul>
+
+            <h3>Azure Active Directory (Feb 2025)</h3>
+            <ul>
+                <li>Configured SSO and implemented Conditional Access policies & RBACs using Azure AD to secure app access.</li>
+                <li>Enforced MFA and location-based restrictions for improved security and user experience.</li>
+            </ul>
+
+            <h3>GSU Technology Immersion Challenge (Nov 2024)</h3>
+            <ul>
+                <li>Led Cipher Soldiers to a top 10 finish in the CTF challenge, solving 8 of 10 challenges.</li>
+                <li>Improved cybersecurity skills in reverse engineering, forensics, and cryptography.</li>
+            </ul>
+
+            <h3>Incident Response Simulation (Apr 2024)</h3>
+            <ul>
+                <li>Conducted simulated incident response using SIEM, Splunk, and VirusTotal, improving threat response by 15%.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Harshit Garg. All rights reserved.</p>
+    </footer>
 </body>
 </html>
